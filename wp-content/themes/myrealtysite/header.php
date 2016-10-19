@@ -23,21 +23,18 @@
 <body <?php body_class(); ?>>
 	<div id="main_wrapper" class="container-fluid">
 		<header class="row main_header backgrnd" role="navigation">
-			<div class="logo col-sm-4 col-md-4 col-lg-3">
-				
-				    
-			
+			<div class="logo col-xs-6 col-sm-4 col-md-4 col-lg-3">
 				<h1><a href="/index.php" alt="Logo"></a></h1>
 			</div>
-			<div class="col-sm-8 col-md-8 col-lg-7">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
+				<button id="menu_toggle">
+					<span class="fa fa-bars fa-4x"></span>
+				</button>
 				<nav class="main_menu">
-					<button id="menu_toggle"><span class="fa fa-bars fa-4x"></span>
-					
-					</button>
 					<?php wp_nav_menu(array(
 		                'menu' => 'Main Menu', 
 		                'container' => '', 
-		                'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>'
+		                'items_wrap' => '<ul>%3$s</ul>'
 		            )); ?>  
 				</nav>
 			</div>

@@ -40,7 +40,6 @@ function css() {
   wp_enqueue_style( 'bootstrap_css', get_stylesheet_directory_uri() . '/css/bootstrap.css' );
   wp_enqueue_style( 'fa', get_stylesheet_directory_uri() . '/css/font-awesome.css' );
   wp_enqueue_style( 'main_css', get_stylesheet_directory_uri() . '/css/main.css' );
-  wp_enqueue_style( 'custom_css', get_stylesheet_directory_uri() . '/css/custom.css' );
 }
 add_action( 'wp_enqueue_scripts', 'css' );
 
@@ -101,7 +100,7 @@ function sidebar_footer() {
     register_sidebar( array(
       'name' => 'Нижний сайдбар',
       'id' => 'sidebar-footer',
-      'before_widget' => '<section class="widget %2$s col-md-4 col-md-push-3">',
+      'before_widget' => '<section class="widget %2$s col-xs-6 col-sm-4 col-md-4 col-sm-push-2 col-md-push-3">',
 	    'after_widget'  => '</section>',
 	    'before_title'  => '<h3>',
 	    'after_title'   => '</h3>',
@@ -190,7 +189,7 @@ function wp_corenavi() {
   $a['prev_text'] = '&laquo;'; //текст ссылки "Предыдущая страница"
   $a['next_text'] = '&raquo;'; //текст ссылки "Следующая страница"
 
-  if ($max > 1) echo '<div class="pagging">';
+  if ($max > 1) echo '<div class="col-sm-12 pagging">';
   if ($total == 1 && $max > 1) $pages = '<span class="pages">Страница ' . $current . ' из ' . $max . '</span>'."\r\n";
   echo $pages . paginate_links($a);
   if ($max > 1) echo '</div>';

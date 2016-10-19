@@ -78,7 +78,7 @@ function mytheme_comment($comment, $args, $depth){
 
 <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="3" <?php echo "placeholder='Введите комментарий'"; ?>></textarea>
 
-<input name="submit" type="submit" id="submit" class="submit_btn дуае"tabindex="4" value="Отправить" />
+<input name="submit" type="submit" id="submit" class="submit_btn left"tabindex="4" value="Отправить" />
 <?php comment_id_fields(); ?>
 
 <?php do_action('comment_form', $post->ID); ?>
