@@ -511,6 +511,9 @@ span.page-numbers.current {background-color: #0264A9;}
 
 /*----------Sidebar----------*/
 
+.sidebar_footer {
+	padding-bottom: 40px;
+}
 .sidebar_left .widget, 
 .sidebar_footer .widget {
     padding: 40px;
