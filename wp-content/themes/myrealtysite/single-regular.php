@@ -1,6 +1,6 @@
 <!-- Regular Post    -->
 <?php while ( have_posts() ) : the_post(); ?>
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('height_auto'); ?>>
 		<h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 		<div class="post_meta">
 			Опубл. <span><?php the_time('j M Y'); ?></span>, Автор: <span><?php the_author_link(); ?></span>, Категория: <?php the_category(', '); ?>, Комм.: <span class="comm"><?php comments_popup_link('0', '1', '%'); ?></span>

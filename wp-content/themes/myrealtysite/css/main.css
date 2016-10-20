@@ -48,6 +48,33 @@ body div#wpwrap {
     padding-left: 0px;
 }
 
+/*----------Typography----------*/
+
+.main_content article h1, .main_content h2, .main_content h3 {
+	color: #0264a9;
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+.main_content article h2 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.main_content article h3 {
+	font-size: 18px;
+	margin: 10px 0 5px 0;
+}
+
+.main_content article p {
+	font: 16px/1.4 'Tahoma, Geneva, sans-serif';
+	padding-left: 4px;
+}
+
+
+
+/*----------End Typography----------*/
+
 /*----------Header----------*/
 
 .header_fixed {
@@ -368,6 +395,7 @@ nav.main_menu ul li ul li a {
 }
 .main_content article.category_p>p {
 	min-height: 120px;
+	height: 120px;
 }
 .main_content article h1 {
 	font-size: 22px;
@@ -378,33 +406,14 @@ nav.main_menu ul li ul li a {
 }
 .main_content article.home_height>p {
 	min-height: 120px;
+	height: 120px;
 }
 .main_content article.home_height:after {
 	padding-top: 20px;
 }
-.main_content article.home_height a.btn {
-	margin-top: 5px;
+.main_content article a.btn {
+	margin-top: 10px;
 }
-/*.main_content article h1, .main_content h2, .main_content h3 {
-	color: #0264a9;
-	font-size: 38px;
-	margin-bottom: 15px;
-}
-
-.main_content article h2 {
-	font-size: 20px;
-	margin-bottom: 5px;
-}
-
-.main_content article h3 {
-	font-size: 18px;
-	margin: 10px 0 5px 0;
-}
-
-.main_content article p {
-	font: 16px/1.2 'Tahoma, Geneva, sans-serif';
-	padding-left: 4px;
-}*/
 #main_wrapper article.home_height img,
 #main_wrapper article img {
 	height: 200px;
@@ -416,11 +425,16 @@ nav.main_menu ul li ul li a {
 	border: 1px solid #c5c5c5;
 	
 }
+#main_wrapper article.height_auto img {
+	height: auto;
+	min-height: auto;
+}
 .main_content article .post_meta {
 	color: #5b656c;
 	padding: 5px 10px;
 	background: #bebebe;
 	margin-bottom: 20px;
+	font-size: 12px;
 }
 .main_content article .post_meta span,
 .main_content article .post_meta a {
@@ -440,10 +454,12 @@ nav.main_menu ul li ul li a {
 .main_content article .post_tags span {
 	background: #bebebe;
 	padding: 3px;
-	font-size: 13px;
+	font-size: 12px;
 }
 .tags_inner {
-	margin: -18px 0 0 38px;
+	margin: -20px 0 0 38px;
+	font-size: 12px;
+	line-height: 12px;
 }
 .main_content article .post_tags a, .tagcloud a {
 	display: inline-block;
@@ -968,6 +984,9 @@ article td h2 {
 	}
 	.header_fixed_m {
 		background-position: -20px center;
+	}
+	.main_content article {
+    	padding: 20px;
 	}
 	.main_content article.home_height,
 	.main_content article.category_p {
